@@ -1,0 +1,65 @@
+.post{
+    background-color: white ;
+    
+}
+
+.post__image{
+    max-height: 470px;
+    max-width: 584.55px;
+}
+
+.card-header{
+    background-color: #FFFFFF;
+}
+
+.card{
+    
+    width: 600px;
+}
+
+.perfil-nome{
+    padding-left: 10px;
+}
+
+.perfil{
+    width: 40px;
+    border-radius: 100%;
+}
+
+.perfil1{
+    width: 90px;
+    border-radius: 100%;
+}
+
+.post__header ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.img-post{
+    width: 600px;
+}
+
+.red{
+    font-size: 3.0em;
+    color: red;
+}
+
+.card-footer{
+    background-color: white;
+}
+
+.icones{
+    display: flex;
+    list-style: none;
+}
+
+.icones li{
+    font-size: 1.4em;
+}
+
+.span-coment{
+    color: #AEA8A1;
+    font-weight: 600;
+}
+
