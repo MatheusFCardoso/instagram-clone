@@ -1,8 +1,13 @@
 import React, { useState } from "react";
+import Navbar from "./components/navbar/Navbar"
 import Post from "./components/posts/Post"
-import './App.css';
-import './components/Bootstrap/Bootstrap.css'
+import Post2 from "./components/posts/Post2"
+import Sidenav from "./components/side.nav/Sidenav";
 import Story from "./components/story/Story";
+import '../src/components/Bootstrap/Bootstrap.css'
+import './App.css';
+
+
 
 
 function App() {
@@ -25,34 +30,37 @@ function App() {
 
   return (
     <div className="App">
-        <div className="app__header">
-          <div className="app__headerWrapper">
-            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Instagram original logo" title="Instagram original logo"/>
+        <Navbar />
 
-              <div className="app__headerButtons">
 
-                <button className="text__button">Logout</button>
-
-                <button className="primary__button">Log in</button>
-
-                <button className="text__button">Sign up</button>
-
-              </div>
-
-            </div>
+        <div className="container">
+        <Story/>
 
         </div>
+        <div className="container my-5">
+          <div className="row my-5">
+            
 
 
-
-        
-            {posts.map((post)=>(
-              <Post 
-                username={post.username}
-                caption={post.caption}
-                imageUrl={post.imageUrl}
-              />
-            ))}    
+          
+          <Post2
+            username={'theu_fcardoso'}
+            caption={'Que incrivel !'}
+            imageUrl={'https://images.pexels.com/photos/287240/pexels-photo-287240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'}
+          />
+          <Sidenav/>
+          
+              {posts.map((post)=>(
+                <Post
+                  username={post.username}
+                  caption={post.caption}
+                  imageUrl={post.imageUrl}
+                />
+              ))}
+          
+          </div>
+        </div>
+              
               
           
 

@@ -17,7 +17,7 @@ import { faBookmark } from '@fortawesome/free-regular-svg-icons'
 
 
 
-function Post({username, caption, imageUrl }) {
+function Post2({username, caption, imageUrl }) {
 
   
   const heart = <FontAwesomeIcon icon={faHeart}/>
@@ -27,7 +27,7 @@ function Post({username, caption, imageUrl }) {
 
   return (
 
-    <div className=" col-9 col-offset-3">
+    <div className="col-9">
 
       <div className="card">
 
@@ -95,4 +95,4 @@ function Post({username, caption, imageUrl }) {
   );
 }
 
-export default Post;
+export default Post2;

@@ -1,0 +1,17 @@
+.navbar-custom{
+    border-bottom: 1px solid #DBDBDB;
+    background-color: white;
+}
+
+.nav-icons{
+    font-size: 1.5em;
+}
+
+.search{
+    background-color: #EFEFEF;
+    border: none;
+    height: 2.5em;
+    padding: 10px;
+    border-radius: 8px;
+}
+
