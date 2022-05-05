@@ -1,8 +1,4 @@
 .side-nav{
     background-color: red;
-    position: -webkit-sticky; /* apenas chrome e webkit nightly */
-    left: 50;
-    position: sticky;
-    
     
 }

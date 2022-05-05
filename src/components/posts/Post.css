@@ -4,18 +4,16 @@
 }
 
 .post__image{
-    max-height: 470px;
-    max-width: 584.55px;
+    width: 100%;
+
+    
 }
 
-.card-header{
+.post-header{
     background-color: #FFFFFF;
 }
 
-.card{
-    
-    width: 600px;
-}
+
 
 .perfil-nome{
     padding-left: 10px;
@@ -37,7 +35,7 @@
 }
 
 .img-post{
-    width: 600px;
+    width: 100%;
 }
 
 .red{
@@ -45,7 +43,7 @@
     color: red;
 }
 
-.card-footer{
+.post-footer{
     background-color: white;
 }
 

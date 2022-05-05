@@ -4,7 +4,6 @@ import "./Post.css";
 import ReactDOM from 'react-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { faComment } from '@fortawesome/free-regular-svg-icons'
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
@@ -27,19 +26,17 @@ function Post({username, caption, imageUrl }) {
 
   return (
 
-    <div className=" col-9 col-offset-3">
+    <div className="col-7 my-3">
 
-      <div className="card">
+      <div className="post">
 
-        <div className="card-header">
+        <div className="post-header px-2 py-2">
 
           <div className="d-flex flex-row align-items-center">
 
-            <div className="">
+            <div>
 
-              <img className="perfil" src="https://media-exp1.licdn.com/dms/image/C4D03AQEt1RmPk_o_Aw/profile-displayphoto-shrink_400_400/0/1648495115377?e=1656547200&v=beta&t=NE4ZU6Eo4s-TzXq67QXl05FFjXz-6OqD2UihSDdIk_w" />
-
-              
+              <img className="perfil" src="https://media-exp1.licdn.com/dms/image/C4D03AQEt1RmPk_o_Aw/profile-displayphoto-shrink_400_400/0/1648495115377?e=1656547200&v=beta&t=NE4ZU6Eo4s-TzXq67QXl05FFjXz-6OqD2UihSDdIk_w" alt="" />
 
             </div>
 
@@ -47,41 +44,30 @@ function Post({username, caption, imageUrl }) {
 
           </div>
 
+
         </div>
 
+        <div className="post-body">
 
-        <div className="card-body p-0" >
+          <img className="img-post" src={imageUrl} alt="" />
 
-          <img className="img-post img-fluid" src={imageUrl} />
-              
         </div>
 
-        <div className="card-footer">
+        <div className="post-footer px-2 py-2" >
 
           <div className="d-flex justify-content-between">
-
             <ul className="icones">
               <li className="px-1">{heart}</li>
               <li className="px-1">{comment}</li>
               <li className="px-1">{send}</li>
             </ul>
-
             <ul className="icones" >
               <li>{save}</li>
             </ul>
+          </div>
             
 
-          </div>
-
-        <div>
-
-        </div>
-        
-          <span className="span-coment">Gostos:</span>
-          <span className="font-weight-bold perfil-nome">{username}</span>
           
-        
-        
 
         </div>
 
