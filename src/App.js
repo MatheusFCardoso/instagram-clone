@@ -11,7 +11,7 @@ import './App.css';
 
 
 function App() {
-  const [posts, setPosts] = useState([
+  const [posts] = useState([
     {
       username: "carrot_cake",
       caption: "Felicidade!",
@@ -31,37 +31,29 @@ function App() {
   return (
     <div className="App">
         <Navbar />
+        
 
 
         <div className="container">
-        <Story/>
+        
 
         </div>
         <div className="container my-5">
-          <div className="row my-5">
-            
-
-
-          
-          <Post2
-            username={'theu_fcardoso'}
-            caption={'Que incrivel !'}
-            imageUrl={'https://images.pexels.com/photos/287240/pexels-photo-287240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'}
-          />
+          <div className="row my-5 teste">
+          <Story/>
           <Sidenav/>
           
-              {posts.map((post)=>(
+          </div>
+          {posts.map((post)=>(
                 <Post
                   username={post.username}
                   caption={post.caption}
                   imageUrl={post.imageUrl}
                 />
               ))}
-          
-          </div>
         </div>
               
-              
+        
           
 
 

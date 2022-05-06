@@ -1,4 +1,33 @@
 .side-nav{
-    background-color: red;
+    background-color: transparent;
     
 }
+
+.ul-side{
+    width: 175px;
+}
+
+.ul-sugest{
+    
+    width: 190px;
+    
+}
+
+.perfil-nav{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.side-nav ul{
+    margin-block: 0px;
+}
+
+.blue{
+    font-weight: bold;
+    color: #0E9AF6;
+}
+
+.gray{
+    color: #A2A2A2 ;
+}
+

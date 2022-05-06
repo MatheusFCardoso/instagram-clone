@@ -4,14 +4,15 @@ import "./Story.css";
 
 function Story(){
     return(
-        <div className="col-9">
-            <div className=" col-9 col-offset-3">
-                <div className="card mx-auto">
-                    <div className="d-flex flex-row align-items-center">
-                    Olá
-                    </div>
+        <div className="col-7 my-3">
+            <div className="">
+                <div className="post-header px-2 py-2 story">
+
                 </div>
+                
             </div>
+               
+            
         </div>
 
                             
