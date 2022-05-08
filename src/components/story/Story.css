@@ -1,7 +1,27 @@
 .story{
-    background-color: red;
-    height: 70px;
+    background-color: white;
+    border: 1px solid #DBDBDB;;
+    height: 80px;
+    
 }
 .teste{
-    height: 50px;
+    height: 60px;
+    margin-top: 500px
+}
+
+.list{
+    display: flex;
+}
+
+.list div{
+    align-items: center;
+    
+}
+
+.img-story{
+  border: double 2px transparent;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 0, 187), rgb(255, 153, 0));
+  background-origin: border-box;
+  background-clip: content-box, border-box; 
+    
 }

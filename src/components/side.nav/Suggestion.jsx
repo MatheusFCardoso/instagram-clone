@@ -9,12 +9,12 @@ function Suggestion({username, follow, imageUrl }){
             </div>
 
             <ul className="d-inline-block aling-items-center list-unstyled ul-sugest">
-                <li className="font-weight-bold perfil-nome">{username}</li>
+                <li className="font-weight-bold perfil-nome hover">{username}</li>
                 <li className="perfil-nome  gray ">{follow}</li>
             </ul>
             
 
-            <span className="blue">Seguir</span>
+            <span className="blue hover">Seguir</span>
                                        
                         
         </div>

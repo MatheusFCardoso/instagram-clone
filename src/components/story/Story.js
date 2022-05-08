@@ -2,21 +2,13 @@ import React from "react";
 import "../Bootstrap/Bootstrap.css"
 import "./Story.css";
 
-function Story(){
+function Story({username, imageUrl }){
     return(
-        <div className="col-7 my-3">
-            <div className="">
-                <div className="post-header px-2 py-2 story">
-
-                </div>
-                
-            </div>
-               
-            
-        </div>
-
-                            
-    );
+        <li className="text-center">
+                <img className="perfil img-story" src={imageUrl} alt="" />
+                <span className="d-block gray hover d-none d-md-block">{username}</span>
+        </li>
+    )
 }
 
-export default Story;
+export default Story 

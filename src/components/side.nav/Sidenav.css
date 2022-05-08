@@ -3,6 +3,7 @@
     
 }
 
+
 .ul-side{
     width: 175px;
 }
@@ -22,6 +23,10 @@
     margin-block: 0px;
 }
 
+.p-side-nav{
+    width: 225px;
+}
+
 .blue{
     font-weight: bold;
     color: #0E9AF6;
@@ -29,5 +34,11 @@
 
 .gray{
     color: #A2A2A2 ;
+}
+
+.fixed{
+    position: fixed;
+    right: 100px;
+    top: 80px;
 }
 

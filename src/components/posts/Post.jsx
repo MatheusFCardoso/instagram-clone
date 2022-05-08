@@ -8,6 +8,9 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { faComment } from '@fortawesome/free-regular-svg-icons'
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 import { faBookmark } from '@fortawesome/free-regular-svg-icons'
+import {faSmile} from '@fortawesome/free-regular-svg-icons'
+import { HiDotsHorizontal } from 'react-icons/hi'
+import { HiDotsVertical } from 'react-icons/hi'
 
 
 
@@ -16,31 +19,39 @@ import { faBookmark } from '@fortawesome/free-regular-svg-icons'
 
 
 
-function Post({username, caption, imageUrl }) {
+function Post({username, caption, imageUrl,perfil,like, comments }) {
 
   
   const heart = <FontAwesomeIcon icon={faHeart}/>
   const comment = <FontAwesomeIcon icon={faComment}/>
   const send = <FontAwesomeIcon icon={faPaperPlane} />
   const save = <FontAwesomeIcon icon={faBookmark} />
+  const emoji = <FontAwesomeIcon icon={faSmile}/>
+
 
   return (
 
-    <div className="col-7 my-3">
+    <div className="col-md-7 col-12 pt-lg-3 pt-1 my-1">
 
       <div className="post">
 
         <div className="post-header px-2 py-2">
 
-          <div className="d-flex flex-row align-items-center">
+          <div className="d-flex align-items-center justify-content-between">
 
             <div>
 
-              <img className="perfil" src="https://media-exp1.licdn.com/dms/image/C4D03AQEt1RmPk_o_Aw/profile-displayphoto-shrink_400_400/0/1648495115377?e=1656547200&v=beta&t=NE4ZU6Eo4s-TzXq67QXl05FFjXz-6OqD2UihSDdIk_w" alt="" />
+              <img className="perfil" src={perfil} alt="" />
+              <span className="font-weight-bold perfil-nome hover" >{username}</span>
 
             </div>
-
-            <span className="font-weight-bold perfil-nome" >{username}</span>
+            <span className="dots d-none d-md-flex px-2">
+              <HiDotsHorizontal/>
+            </span>
+            <span className=" dots d-flex d-md-none px-2">
+              <HiDotsVertical/>
+            </span>
+            
 
           </div>
 
@@ -66,7 +77,18 @@ function Post({username, caption, imageUrl }) {
             </ul>
           </div>
             
+          <div className="post-comment" >
+            <p className="font-weight-bold hover">{like} Curtidas</p>
+            <p className="gray"><span className="font-weight-bold text-dark hover">{username}</span> -{caption}</p>
+            <p className="gray">Ver todos os {comments} comentários</p>
+          </div>
 
+          <div className="d-flex justify-content-between align-items-center post-comentar">
+            <span className="px-1 icon">{emoji}</span>
+            <input className="px-1" type="text" placeholder="Fazer um comemtário...."/>
+            <span className="px-1 blue hover" >Publicar</span>
+          </div>
+          
           
 
         </div>
