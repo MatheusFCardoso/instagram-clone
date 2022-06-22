@@ -8,7 +8,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { faComment } from '@fortawesome/free-regular-svg-icons'
 import { faPaperPlane } from '@fortawesome/free-regular-svg-icons'
 import { faBookmark } from '@fortawesome/free-regular-svg-icons'
-import {faSmile} from '@fortawesome/free-regular-svg-icons'
+import { faSmile } from '@fortawesome/free-regular-svg-icons'
 import { HiDotsHorizontal } from 'react-icons/hi'
 import { HiDotsVertical } from 'react-icons/hi'
 
@@ -19,14 +19,14 @@ import { HiDotsVertical } from 'react-icons/hi'
 
 
 
-function Post({username, caption, imageUrl,perfil,like, comments }) {
+function Post({ username, caption, imageUrl, perfil, like, comments }) {
 
-  
-  const heart = <FontAwesomeIcon icon={faHeart}/>
-  const comment = <FontAwesomeIcon icon={faComment}/>
+
+  const heart = <FontAwesomeIcon icon={faHeart} />
+  const comment = <FontAwesomeIcon icon={faComment} />
   const send = <FontAwesomeIcon icon={faPaperPlane} />
   const save = <FontAwesomeIcon icon={faBookmark} />
-  const emoji = <FontAwesomeIcon icon={faSmile}/>
+  const emoji = <FontAwesomeIcon icon={faSmile} />
 
 
   return (
@@ -46,12 +46,12 @@ function Post({username, caption, imageUrl,perfil,like, comments }) {
 
             </div>
             <span className="dots d-none d-md-flex px-2">
-              <HiDotsHorizontal/>
+              <HiDotsHorizontal />
             </span>
             <span className=" dots d-flex d-md-none px-2">
-              <HiDotsVertical/>
+              <HiDotsVertical />
             </span>
-            
+
 
           </div>
 
@@ -76,7 +76,7 @@ function Post({username, caption, imageUrl,perfil,like, comments }) {
               <li>{save}</li>
             </ul>
           </div>
-            
+
           <div className="post-comment" >
             <p className="font-weight-bold hover">{like} Curtidas</p>
             <p className="gray"><span className="font-weight-bold text-dark hover">{username}</span> -{caption}</p>
@@ -85,21 +85,21 @@ function Post({username, caption, imageUrl,perfil,like, comments }) {
 
           <div className="d-flex justify-content-between align-items-center post-comentar">
             <span className="px-1 icon">{emoji}</span>
-            <input className="px-1" type="text" placeholder="Fazer um comemtário...."/>
+            <input className="px-1" type="text" placeholder="Fazer um comemtário...." />
             <span className="px-1 blue hover" >Publicar</span>
           </div>
-          
-          
+
+
 
         </div>
 
       </div>
 
     </div>
-    
-    
 
-    
+
+
+
   );
 }
 
